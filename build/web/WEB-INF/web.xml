@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>Controllerz</servlet-name>
+        <servlet-class>sample.control.Controllerz</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>maytinh</servlet-name>
+        <servlet-class>sample.model.maytinh</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Controller</servlet-name>
+        <servlet-class>sample.control.Controller</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Controllerz</servlet-name>
+        <url-pattern>/Controllerz</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>maytinh</servlet-name>
+        <url-pattern>/maytinh</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Controller</servlet-name>
+        <url-pattern>/Controller</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
